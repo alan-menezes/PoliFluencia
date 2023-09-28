@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <title>PoliFluencia</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!----Cabeçalho---->
+        <header class="green">
+            <nav class="green white-text">
+                <div class="nav-wrapper container">
+                    <h1>polifluencia</h1>
+                    <a href="index.html" class="brand-logo"><img id="brand" src="imagens/polifluencia-logo.png"></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="paginas/sobre.html">Sobre</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </header>
+        <!---Pagina--->
+        <section class="main bloco container">
+                <div class="texto row">
+                    <div class="col s12 textContainer">
+                        <h2 class="center" id="titulo"></h2>
+                        <p id="texto">
+                            
+                        </p>
+                    </div>
+
+                    <div class="cta">
+                        <div class="col s4">
+                            <!-- Botão para ouvir -->
+                            <button class="btn btn-large green" id="btnOuvir" onclick="ouvirTexto()"><i class="material-icons">play_circle_outline</i></button>
+                        </div>
+                        <div class="col s4">
+                            <!-- Botão para gravar áudio -->
+                            <button class="btn green btn-large" id="btnGravar" onclick="iniciarGravacao()"><i class="material-icons">mic</i></button>
+                        </div>
+                        <div class="col s4">
+                            <!-- Botão para parar a gravação e reproduzir -->
+                            <button class="btn green btn-large" id="btnPararReproduzir" onclick="pararGravacaoEReproduzir()"><i class="material-icons">record_voice_over</i></button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!---FimPagina--->
+        
+        <!----Rodapé---->
+        <footer class="green">
+            <p class="center white-text">
+                feito por <a class="white-text" href="https://www.instagram.com/alan_o_menezes/">@alan_o_menezes</a>
+            </p>
+            <p class="center white-text">
+                &copy desde 2023
+            </p>
+        </footer>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script>
+            M.AutoInit();
+        </script>
+    </body>
+</html>-
