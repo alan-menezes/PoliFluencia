@@ -1,71 +1,132 @@
+/* Estilos para dispositivos móveis (mobile-first) */
 * {
-	margin: 0;
-	padding: 0;
-	outline: none;
-	box-sizing: border-box;
-}
-html, body, .bloco {
-	min-width: 100%;
-	min-height: 100vh;
-}
-img {
-	max-width: 100%;
-}
-header {
-	/*padding: 20px 0;*/
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
 }
 
-h1{
-	font-size: 0px;
-	display: none;
+html, body, .bloco {
+    min-width: 100%;
+    min-height: 100vh;
 }
+
+img {
+    max-width: 100%;
+}
+
+header {
+    /* Estilos para o cabeçalho em dispositivos móveis */
+}
+
+h1 {
+    font-size: 0px; /* Tamanho de fonte zerado para h1 em dispositivos móveis (oculto) */
+    display: none; /* Oculta o elemento h1 em dispositivos móveis */
+}
+
 a.brand-logo>img#brand {
-	width: 100px;
-	height: 65px;
-	border-radius: 50%;
+    width: 100px; /* Define a largura da imagem do logotipo */
+    height: 65px; /* Define a altura da imagem do logotipo */
+    border-radius: 50%; /* Adiciona um arredondamento aos cantos da imagem do logotipo */
 }
-p {text-align: justify;}
+
+p {
+    text-align: justify; /* Alinha o texto justificado */
+    font-size: 18pt;
+}
+
 .main {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo na horizontal e vertical */
+    margin: 0;
 }
+
 .textContainer {
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo na horizontal e vertical */
 }
+
 .texto {
-	display: flex;
-	flex-flow: column wrap;
-	align-items: center;
-	justify-content: center;
-	padding: 20px;
-	margin: 30px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo na horizontal e vertical */
+    padding: 20px;
+    margin: 30px 0; /* Define as margens superior e inferior */
 }
+
 #titulo {
-	margin: 30px 0;
+    margin: 30px 0; /* Define a margem superior e inferior para o elemento com o id "titulo" */
 }
+
+#imagemNoticia {
+    /* Estilos para a imagem da notícia */
+    max-height: 400px;
+}
+
 .texto p {
-	text-align: justify;
-	margin: 50px 0;
+    font-size: 14pt;
+    text-align: justify; /* Alinha o texto justificado */
+    margin: 50px 0; /* Define as margens superior e inferior para os parágrafos */
 }
-/*pagina sobre*/
+/* Estilos para tablets e telas maiores (mínimo de 768px) */
+@media screen and (min-width: 768px) {
+    header {
+        /* Estilos específicos para o cabeçalho em telas maiores (tablets, por exemplo) */
+    }
+
+    .main {
+        /* Estilos específicos para o conteúdo principal em telas maiores */
+    }
+
+    .textContainer {
+        /* Estilos específicos para o container de texto em telas maiores */
+    }
+
+    .texto {
+        /* Estilos específicos para o texto em telas maiores */
+    }
+
+    #titulo {
+        /* Estilos específicos para o título em telas maiores */
+    }
+
+    #imagemNoticia {
+        /* Estilos específicos para a imagem em telas maiores */
+        max-height:400px;
+    }
+
+    .texto p {
+        /* Estilos específicos para os parágrafos em telas maiores */
+    }
+}
+
+/* Estilos adicionais para telas maiores (mínimo de 1024px) */
+@media screen and (min-width: 1024px) {
+    /* Adicione estilos específicos para telas ainda maiores aqui */
+    img{max-height: 600px;}
+}
+
+/* Estilos para a página "sobre" */
 .banner {
-	background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('https://images.unsplash.com/photo-1502465771179-51f3535da42c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('https://images.unsplash.com/photo-1502465771179-51f3535da42c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 .t-sobre {
-	color: #fff;
-	margin: 20px;
-	font-size: 35pt;
+    color: #fff; /* Cor do texto para a classe .t-sobre */
+    margin: 20px; /* Margem para a classe .t-sobre */
+    font-size: 35pt; /* Tamanho de fonte para a classe .t-sobre */
 }
+
 .p-sobre {
-	color: #fff;
-	margin: 50px;
-	font-size: 20pt;
+    color: #fff; /* Cor do texto para a classe .p-sobre */
+    margin: 50px; /* Margem para a classe .p-sobre */
+    font-size: 20pt; /* Tamanho de fonte para a classe .p-sobre */
 }
